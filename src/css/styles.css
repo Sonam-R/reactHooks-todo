@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.container-inr {
+  width: 100%;
+  float: left;
+  background: #fefefe;
+  padding: 0px 0 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+.column {
+  padding: 40px 0 !important;
+}
+.employee-name {
+  width: auto;
+  float: left;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.employee-list {
+  text-align: left;
+  padding: 15px 20px;
+  border-top: #eee solid 1px;
+  float: left;
+  width: 100%;
+}
+.employee-list:first-child {
+  border: none;
+}
+.employee-action {
+  width: auto;
+  float: right;
+}
+.employee-action button {
+  width: auto;
+  float: left;
+  padding: 5px 10px;
+  background: red;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+
+}
+.delete-btn {
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 5px;
+}
+.edit-btn {
+  opacity: 0.5;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+.form-container {
+  width: 100%;
+  float: left;
+  padding: 20px 20px 0;
+}
+.form-container input {
+  border: #ccc solid 1px;
+  padding: 10px;
+  width: 100%;
+  background: #fff;
+  border-radius: 5px;
+  color: #666;
+  font-size: 16px;
+}
+.form-container input:focus {
+  outline: none;
+}
+.employee-list.absent .employee-name {
+  text-decoration: line-through;
+}
+span.absent-btn {
+  cursor: pointer;
+}
+.absent-btn:hover {
+  opacity: 0.8;
+}
+.heading {
+  color: #666;
+  padding: 10px 0 20px;
+}
+.bottom-btn {
+  position: absolute;
+  bottom: 0;
+}
+.bottom-btn {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto 20px;
+  background: #eee;
+  border: navajowhite;
+  padding: 10px;
+  color: #666;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: #eee solid 1px;
+}
+.bottom-btn:hover,
+.bottom-btn:focus {
+  opacity: 0.8;
+  outline: none !important;
+}
+.top-view {
+  background: #e5e5e5;
+  border-radius: 10px;
+  margin: 20px 0 40px;
+  padding: 20px;
+  text-align: left;
+  border: #eee solid 1px;
+  font-size: 15px;
+  color: #444;
+}
+.top-view p {
+  margin: 0 0 10px;
+}
+.top-view strong {
+  width: 150px;
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+.modal-container {
+  position: absolute;
+  background: #fff;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  padding: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 150px;
+  z-index: 1;
+}
+.modal-container-outer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+}
+.employee-detail-container {
+  text-align: center;
+}
+.employee-detail-container p {
+  width: 50%;
+  float: left;
+  font-size: 14px;
+  padding: 0 0 10px;
+  min-height: 70px;
+}
+.employee-detail-container label {
+  width: 100%;
+  float: left;
+  color: #666;
+  font-weight: 600;
+  font-size: 18px;
+}
+.employee-detail-container h3 {
+  font-size: 26px;
+  padding: 0px 0 15px;
+  color: #444;
+}
+.employee-detail-container span {
+  font-size: 16px;
+  padding: 8px 0 10px;
+  color: #666;
+  display: inline-block;
+}
+.employee-detail-container input {
+  width: 90%;
+  float: left;
+  border: none;
+  margin: 10px 0 0;
+  padding: 5px;
+  border-bottom: #ccc solid 2px;
+  font-size: 16px;
+  color: #666;
+  transition: border 0.4s ease-in-out;
+}
+.employee-detail-container input:active,
+.employee-detail-container input:focus,
+.employee-detail-container input:hover {
+  outline: none;
+}
+.employee-detail-container input:focus {
+  border-color: orange;
+}
+.employee-detail-container small {
+  position: absolute;
+  right: 20px;
+  font-size: 25px;
+  top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: border 0.4s ease-in-out;
+}
+.employee-detail-container small:hover {
+  opacity: 0.7;
+}
+.save-btn {
+  width: 100%;
+  float: left;
+  text-align: center;
+  padding: 30px 0 10px;
+}
+.save-btn button {
+  border: none;
+}
+.save-btn button {
+  border: none;
+  background: #333;
+  padding: 10px 50px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.save-btn button:hover {
+  opacity: 0.8;
+}
