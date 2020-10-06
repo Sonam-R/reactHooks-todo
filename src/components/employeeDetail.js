@@ -19,7 +19,7 @@ const EmployeeDetail = ({ employee, closeModal, editEmployees, index }) => {
       designation: updatedDesignation || employee.designation,
       reportingManager: updatedManager || employee.reportingManager,
       shift: updatedShift || employee.shift,
-      showDetail: false
+      isAbsent: employee.isAbsent,
     }
     editEmployees(index, newUpdatedEmployee);
 }
