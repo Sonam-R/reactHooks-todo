@@ -27,7 +27,7 @@ function App() {
   // marking Absent of not present
   const attendence = index => {
     const newEmployee = [...employeeList];
-    newEmployee[index].isAbsent = true;
+    newEmployee[index].isAbsent = !newEmployee[index].isAbsent;
     setEmployees(newEmployee);
     dispatch({ type: 'UPDATE_EMPLOYEE', payload: newEmployee });
   };
